@@ -9,7 +9,7 @@ function App() {
     useEffect(() => {
         axios.get("/api/todos")
             .then(response => {
-                console.log(response)
+               
                 setTodos(response.data);
             })
             .catch(error => {
